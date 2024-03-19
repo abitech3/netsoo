@@ -1,0 +1,70 @@
+{% extends 'netsooapp/includes/base.html' %}
+
+
+
+
+<body>
+
+    {% block content %}
+
+    {%  include 'netsooapp/includes/head.html' %}
+    
+     {%  include 'netsooapp/includes/side.html' %}
+ 
+
+  <main id="main" class="main">
+          <div class="card m-auto mt-5">
+            <div class="card-body">
+              <h5 class="card-title">Medium</h5>
+              <form action="" class="form1">
+              <div class="row">
+                <label class="col-form-label" >From :</label>
+                <div class="col-sm-12">
+                  <select class="form-select" aria-label="Default select example">
+                    <option selected></option>
+                    <option value="1">user@gmail.com</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row mb-2 ">
+                <label class="col-form-label">To:</label>
+                <div class="col-sm-12">
+                  <select class="form-select" aria-label="Default select example">
+                    <option selected></option>
+                    <option value="1">Admin1@info.com</option>
+                    <option value="1">Admin2@info.com</option>
+                    <option value="1">Admin3@info.com</option>
+
+                  </select>
+                </div>
+              </div>
+               <!-- Quill Editor Full -->
+               <div class="quill-editor-full">
+                 <p>Hello World!</p>
+               </div>
+               <!-- End Quill Editor Full -->
+               <button type="submit" class="btn btn-primary">Send</button>
+              </form>
+            
+            </div>
+          </div>
+
+   
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+    <div class="copyright">
+      &copy; Copyright <strong><span>NetSoo</span></strong>. All Rights Reserved
+    </div>
+    <div class="credits">
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+{% endblock %}
+
+</body>
+
+</html>
